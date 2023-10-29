@@ -6,11 +6,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script src="game.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="game.js" defer></script>
 </head>
 
 <body>
+  <div id="container">
+    <div id="title"> Rock Paper Scissors</div>
+    <div id="score">
+      <div id="pScore"></div>
+      <div id="cScore"></div>
+    </div>
+    <div id="game">
+      <div id="winner"></div>
+      <img id="computer-choice">
+      <div id="result"></div>
+    </div>
 
+    <div id="choices">
+      <div class="group">
+        <img src="images/rock.png" id="p-rock">
+        <button id="rockbtn"> Rock </button>
+      </div>
+      <div class="group">
+        <img src="images/paper.png" id="p-paper">
+        <button id="paperbtn"> Paper </button>
+      </div>
+      <div class="group">
+        <img src="images/scissor.png" id="p-scissor">
+        <button id="scissorsbtn"> Scissors </button>
+      </div>
+    </div>
+    <button id="restart"> Restart </button>
+  </div>
 </body>
 
 </html>
